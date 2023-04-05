@@ -15,7 +15,7 @@ con <- dbConnect(RPostgres::Postgres(),dbname = 'bom',
                  host = '127.0.0.1',
                  port = 5432, # or any other port specified by your DBA
                  user = 'postgres',
-                 password = 'xVM15IoA')
+                 password = '')
 
 get.weather <- function(id, type){
   data <- get_historical(stationid = id, type = type)
